@@ -1,0 +1,12 @@
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/bin/Debug/net6.0/DeliveryService_Repo.deps.json
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/bin/Debug/net6.0/DeliveryService_Repo.dll
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/bin/Debug/net6.0/DeliveryService_Repo.pdb
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.csproj.AssemblyReference.cache
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.AssemblyInfoInputs.cache
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.AssemblyInfo.cs
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.csproj.CoreCompileInputs.cache
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.dll
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/refint/DeliveryService_Repo.dll
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/DeliveryService_Repo.pdb
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/obj/Debug/net6.0/ref/DeliveryService_Repo.dll
