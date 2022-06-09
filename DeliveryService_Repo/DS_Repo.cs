@@ -16,14 +16,14 @@ namespace DeliveryService_Repo
             return _orderDirectory;
         }
 
-        public Delivery? GetDeliveryByName(string Name)
+        public Delivery GetDeliveryByName(string Name)
         {
             return _orderDirectory.Find(order => order.Name.ToLower() == Name.ToLower());
         }
 
         public bool UpdateExistingDelivery(string originalName, Delivery newDelivery)
         {
-            Delivery? deliveryToUpdate = GetDeliveryByName(originalName);
+            Delivery deliveryToUpdate = GetDeliveryByName(originalName);
             if (deliveryToUpdate != default)
             {
                 deliveryToUpdate.Name = newDelivery.Name;
@@ -40,7 +40,7 @@ namespace DeliveryService_Repo
         //delete
         public bool DeleteExistingDelivery(string name)
         {
-            Delivery? deliveryToDelete = GetDeliveryByName(name);
+            Delivery deliveryToDelete = GetDeliveryByName(name);
             if (deliveryToDelete != default)
             {
                 return _orderDirectory.Remove(deliveryToDelete);

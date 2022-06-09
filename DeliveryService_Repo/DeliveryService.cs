@@ -1,13 +1,22 @@
 ﻿
 namespace DeliveryService_Repo;
-public class Delivery
+
+public class NewBaseType
 {
-   /* 
+    public List<Delivery> OrderNum()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+public class Delivery : NewBaseType
+{
+   
    public Delivery()
     {
 
     }
-    */
+    
     
     public Delivery (string customerName, int quantityAmt, DateTime dayOfOrder, DateTime dayDelivered, StatusType orderStatus)
     {
@@ -17,7 +26,11 @@ public class Delivery
         DeliveryDate = dayDelivered;
         OrderStatus = orderStatus;
     }
-    
+
+    public Delivery(string v1, int v2, StatusType complete)
+    {
+    }
+
     //customer id
     public string Name {get; set; }
 
@@ -54,9 +67,26 @@ public class Delivery
                 }
         }
     }
-    
 
+    public Delivery ToString(string orderNum)
+    {
+        throw new NotImplementedException();
+    }
 
+    public bool CheckOrderStatus(string orderNum)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool RemoveOrderFromList(string orderNum)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void AddOrderToList(Delivery randoComando)
+    {
+       // throw new NotImplementedException();
+    }
 }
 public enum StatusType {
     Scheduled,

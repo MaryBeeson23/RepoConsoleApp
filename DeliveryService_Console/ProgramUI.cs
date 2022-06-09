@@ -1,9 +1,19 @@
 using DeliveryService_Repo;
 public class ProgramUI
 {
+    public readonly Delivery _repo = new Delivery();
+
+    public object OrderNum { get; private set; }
+    public object Name { get; private set; }
+    public object Quantity { get; private set; }
+    public bool Scheduled { get; private set; }
+    public bool EnRoute { get; private set; }
+    public bool Delivered { get; private set; }
+
     public void Run()
     {
         Seed();
+        
         RunMenu();
     }
 
@@ -21,7 +31,7 @@ public class ProgramUI
             "5. Check Status.\n" +
             "6. Exit");
 
-            string? selection = Console.ReadLine();
+            string selection = Console.ReadLine();
 
             switch (selection)
             {
@@ -59,12 +69,12 @@ public void AddNewOrder()
     Delivery newOrder = new Delivery();
     
     System.Console.WriteLine("Please write your name:");
-    newDelivery.CustomerName = Console.ReadLine();
+    newOrder.Name = Console.ReadLine();
 
     System.Console.WriteLine("How many do you want?");
-    newDelivery.Quantity = Console.ReadLine();
+    newOrder.Quantity = Int32.Parse(Console.ReadLine());
 
-if (Repo.AddNewOrder(newOrder))
+if (_repo.Equals(newOrder))
 {
     Console.Clear();
     System.Console.WriteLine($"Delivery {newOrder.Name} has been added.");
@@ -80,9 +90,9 @@ public void GetOneOrder()
 {
     Console.Clear();
     System.Console.WriteLine("If you know the number on your order, please enter it below. If not, choose option 3 on the main menu to view all deliveres.");
-    string? orderNum = Console.ReadLine();
+    string orderNum = Console.ReadLine();
 
-    Delivery item = _repo.GetOneDeliveryFromList(orderNum);
+    Delivery item = _repo.ToString(orderNum);
 
     if(item == default)
     {
@@ -96,30 +106,31 @@ public void GetOneOrder()
 }
 
 public void GetAllOrders()
-{
-    Console.Clear();
-    List<Delivery> orderList = _repo.GetList();
+    {
+        Console.Clear();
+        List<Delivery> orderList = _repo.OrderNum();
 
-    if(orderList < 1)
-    (
-        System.Console.WriteLine("There are no orders to see here. Use option one to create a new order.");
-    ) else {
-        foreach (Delivery order in orderList)
-        {
-            System.Console.WriteLine($"---------- Delivery {item.OrderNum} ----------\n" +
-        $"Ordered by: {item.Name}\n" +
-        $"Got {item.Quantity} deliveries");
-        }
+            foreach (Delivery order in orderList)
+            {
+                System.Console.WriteLine($"---------- Delivery {OrderNum} ----------\n" +
+            $"Ordered by: {Name}\n" +
+            $"Got {Quantity} deliveries");
+            }
+        
+        WaitForKey();
     }
-    WaitForKey();
-}
+
+    private static int NewMethod()
+    {
+        return 0;
+    }
 
     public void CheckOrderStatus()
 {
     Console.Clear();
     System.Console.WriteLine("Enter your order number to check order status.");
     string orderNum = Console.ReadLine();
-    bool StatusType = _repo.CheckMyOrderStatus(orderNum);
+    bool StatusType = _repo.CheckOrderStatus(orderNum);
     if (Scheduled)
     {
         System.Console.WriteLine("Order has been scheduled");
@@ -164,13 +175,17 @@ public void DeleteOneOrder()
 
     private void Seed()
     {
-        throw new NotImplementedException();
+        Delivery randoComando = new Delivery("Dan the Man", 32, StatusType.Complete);
+        Delivery gumdropButtons = new Delivery("Gingy", 1, StatusType.EnRoute);
+        Delivery antInPants = new Delivery("Itchy Bum", 666, StatusType.Scheduled);
+        Delivery idekAnymore = new Delivery("Bob", 74, StatusType.Cancelled);
+
+        _repo.AddOrderToList(randoComando);
+        _repo.AddOrderToList(gumdropButtons);
+        _repo.AddOrderToList(antInPants);
+        _repo.AddOrderToList(idekAnymore);   
     }
 }
 
 
-/*internal class newDelivery
-{
-    internal static string? CustomerName;
-    internal static int? Quantity;
-}*/
+

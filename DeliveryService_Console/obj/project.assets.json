@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DeliveryService_Repo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DeliveryService_Repo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeliveryService_Repo.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DeliveryService_Repo/1.0.0": {
+      "type": "project",
+      "path": "../DeliveryService_Repo/DeliveryService_Repo.csproj",
+      "msbuildProject": "../DeliveryService_Repo/DeliveryService_Repo.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DeliveryService_Repo >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/zachshanks/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/DeliveryService_Repo.csproj": {
+              "projectPath": "/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/DeliveryService_Repo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,6 @@
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/bin/Debug/net6.0/CoverletSourceRootsMapping
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/obj/Debug/net6.0/DeliveryService_Tests.csproj.AssemblyReference.cache
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/obj/Debug/net6.0/DeliveryService_Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/obj/Debug/net6.0/DeliveryService_Tests.AssemblyInfoInputs.cache
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/obj/Debug/net6.0/DeliveryService_Tests.AssemblyInfo.cs
+/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Tests/obj/Debug/net6.0/DeliveryService_Tests.csproj.CoreCompileInputs.cache

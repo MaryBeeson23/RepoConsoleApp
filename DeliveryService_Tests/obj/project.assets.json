@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "DeliveryService_Repo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DeliveryService_Repo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeliveryService_Repo.dll": {}
+        }
       }
     }
   },
@@ -5966,10 +5976,16 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "DeliveryService_Repo/1.0.0": {
+      "type": "project",
+      "path": "../DeliveryService_Repo/DeliveryService_Repo.csproj",
+      "msbuildProject": "../DeliveryService_Repo/DeliveryService_Repo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DeliveryService_Repo >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.1",
@@ -6000,7 +6016,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/DeliveryService_Repo.csproj": {
+              "projectPath": "/Users/zachshanks/Desktop/ElevenFiftyProjects/codingFoundations/assignments/RepoConsoleApp/DeliveryService_Repo/DeliveryService_Repo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
